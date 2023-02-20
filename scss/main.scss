@@ -1,0 +1,46 @@
+@import 'partials/variables';
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-size: 1rem;
+	font-weight: 400;
+	font-family: $font-family;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	scrollbar-color: transparentize($text-primary, 0.8);
+	scrollbar-width: thin;
+	&::-webkit-scrollbar {
+		height: 10px;
+		width: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		background-color: transparentize($text-primary, 0.8);
+		border-radius: 1rem;
+	}
+	&::-webkit-scrollbar-thumb:hover {
+		background-color: transparentize($text-primary, 0.6);
+	}
+	&::-webkit-scrollbar-track {
+		background: transparent;
+	}
+}
+
+body {
+	padding: 1rem;
+	margin: 0 auto;
+	overflow-x: hidden;
+}
+
+button {
+	border: none;
+	cursor: pointer;
+	background-color: transparent;
+	&:focus,
+	&:active {
+		outline: none;
+	}
+}
+
